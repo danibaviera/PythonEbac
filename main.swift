@@ -1,65 +1,188 @@
 //
 //  main.swift
-//  Funcionalidades_Basicas
+//  Criando_variaveis
 //
-//  Created by Danieli on 08/06/22.
+//  Created by Danieli on 04/05/22.
 //
 
-import Foundation
+//import Foundation
 
-print("Hello, World!")
+//print("Hello, World!")
+    //Criando variavel em Swift
+    //Passo 1 - var
+    //Passo 2 - nome da var - animal
+    //Passo 3 - tipo da var - String
+    //Passo 4 - valor da var - cachorro
+    //Resultado final - var animal:String =    ˜cachorro˜
 
-
-//O que seria uma funcao?
-//funcao de soma
-//funcao de config de cor
-
-//ABAIXO FUNCAO COM PARAMETROS E NAO EXISTE LIMITE DE PARAMETROS QUE POSSAM SER COLOCADOS
-
-func somarValores (valor1:Int, valor2:Int){
-    print(valor1 + valor2)
-}
-
-
-somarValores(valor1: 700, valor2:10)
+//var nome:String = "Dani"
+//print(nome)
+//var emprego:String = "Dev"
+//print(emprego)
 
 
-----------------------------
+//---------------------------
 
-//Funcao sem parametro
+// TIPO INT
 
-func nomeCompleto(){
-    print("Danieli Baviera")
-}
+//var idade:Int = 26
+//var seculo:Int = 21
+//var ano:Int = 2022
+//var idademae:Int = 47
 
-nomeCompleto()
+//print(idade)
+//print(seculo)
+//print(anoprint(idademae)
 
------------------------------
+//------------------------------
 
-
-
-//Funcao de retorno
-
-func multiplicarValores (valor1:Int, valor2:Int)-> Int{
-    return valor1 * valor2
-}
-
-var valorTotalMultiplicacao:Int = multiplicarValores(valor1: 10, valor2: 10)
+//TIPO FLOAT
+// Numeros decimais de poucas casas
 
 
-print(valorTotalMultiplicacao)
+//var numeroFloat:Float = 10.000
 
+//-------------------------------
+
+
+// TIPO DOUBLE
+// Numeros decimais de muitas casa
+
+//var numeroDouble:Double = 10.00000000212121000
+
+// TIPO BOOL
+//Contem verdadeiro ou falso
+
+//var desconto:Bool = true
+//var maiordeIdade:Bool = false
+
+//print(desconto)
+//print(maiordeIdade)
+
+-------------------------------------------
+
+// frase com texto e numeros
+
+//var nomeAmigo:String = "Jeff"
+//var nomeDani:String = "Dani"
+
+//var idadeAmigo:Int = 30
+//var precoCombustivel:Float = 4.567
+//var pi:Double = 3.14434243243343232
+//var gostoDeChocolate:Bool = true
+
+
+//var frases:String = nomeAmigo + nomeDani
+//print(frases)
+
+//var fraseNomeEIdade:String = "Me chamo " + nomeAmigo + " e tenho " + String(idadeAmigo) + "anos"
+//print(fraseNomeEIdade)
+
+
+//Segunda maneira de concatenacão
+
+//var fraseSimples:String = "Me chamo \(nomeAmigo) e tenho \(idadeAmigo) anos."
+
+//print(fraseSimples)
+
+-----------------------------------------
+
+//Manipulacão com Float e Double
+
+//var valorDolar:String = "O dolar hoje está custando \(pi) reais"
+
+//var valorEuro:String = "O euro está custando \(precoCombustivel) reais"
+
+//print(valorDolar)
+//print(valorEuro)
+
+
+-----------------------------------------
+
+// Sistema inverso -> String para Int
+
+//var valorCarro:String = "25000"
+//var imposto:Double = 0.14
+
+
+//var configValorCarroInt:Int = Int(valorCarro) ?? 0
+
+//var valorTotalImposto:Double = //Double(configValorCarroInt) * imposto
+
+//print(valorTotalImposto)
+
+
+________________________________________
+
+06/08/22
+
+
+//Variaveis Opcionais
+//Variaveis que podem ou nao ter valor
+
+var nome: String?
+
+nome = "Dani"
+var frase = "Me chamo \(nome ?? "Fulano")"
+print(nome)
 
 ------------------------
 
 
-//Funcao de retorno sem parametros
+var idade:Int?
 
-var nomeCompleto2:String = "Danieli Bavi"
-func trazerTextoVariaveis()-> String{
-    return nomeCompleto2
-}
+var frase = "Eu tenho \(idade ?? 26) anos"
+print(frase)
 
-print (trazerTextoVariaveis())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
